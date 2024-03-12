@@ -141,119 +141,14 @@ header nav a {
     column-gap: .25rem;
 }
 
-@media (max-width: 64rem) {
-    .insideMainHead .universalsearchbox {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .universalsearchbox #bigbox1 {
-        order: 1;
-        width: 6rem;
-    }
-
-    .universalsearchbox #bigbox2 {
-        order: 2;
-        width: 6rem;
-    }
-
-    .universalsearchbox #bigbox3 {
-        order: 3;
-        width: 6rem;
-        flex-shrink: 1;
-    }
-
-    .universalsearchbox #bigbox4 {
-        order: 4;
-        width: 6rem;
-    }
-
-    .universalsearchbox #bigbox5 {
-        order: 6;
-        padding: 0;
-        width: 6rem;
-    }
-
-    .universalsearchbox #bigbox6 {
-        width: 6rem;
-        order: 6;
-        width: 6rem;
-    }
-}
-
-@media (max-width: 48rem) {
-    .insideMainHead .universalsearchbox {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.15rem;
-    }
-
-    .universalsearchbox #bigbox1 {
-        flex-basis: 100%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        order: 1;
-    }
-
-    .universalsearchbox #bigbox2 {
-        flex-basis: 100%;
-        flex-grow: 1;
-        flex-shrink: 0;
-        order: 2;
-    }
-
-    .universalsearchbox #bigbox3 {
-        flex-basis: 40%;
-        flex-grow: 0;
-        flex-shrink: 0;
-        order: 3;
-    }
-
-    .universalsearchbox #bigbox4 {
-        flex-basis: 40%;
-        flex-grow: 0;
-        flex-shrink: 0;
-        order: 4;
-    }
-
-    .universalsearchbox #bigbox5 {
-        flex-basis: 100%;
-        flex-grow: 0;
-        flex-shrink: 0;
-        order: 6;
-        padding: 0;
-        margin: 0;
-    }
-
-    .universalsearchbox #bigbox6 {
-        flex-basis: 100%;
-        flex-grow: 0;
-        flex-shrink: 0;
-        order: 5;
-        padding-bottom: 1.5rem;
-    }
-
-    .universalsearchbox .checkbox {
-        display: none;
-    }
-
-    .universalsearchbox #fromBox {
-        border-radius: 0;
-    }
-
-    .universalsearchbox #travellersBox {
-        border-radius: 0;
-    }
-}
-
 .bigbox {
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 }
 
 .searchbox {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     box-sizing: inherit;
     padding: 0;
@@ -269,24 +164,7 @@ header nav a {
 
 #travellersBox {
     border-radius: 0 .75rem .75rem 0;
-}
-
-#bigbox1 {
-    flex-grow: 1;
-    flex-basis: 18%;
-}
-
-#bigbox2 {
-    flex-grow: 1;
-    flex-basis: 18%;
-}
-
-#bigbox3 {
-    flex-basis: 20%;
-}
-
-#bigbox4 {
-    flex-basis: 20%;
+    flex-grow: 0;
 }
 
 .checkbox {
@@ -340,11 +218,13 @@ header nav a {
     margin: 0;
     padding: 0;
     vertical-align: text-bottom;
+    flex-basis: 100%;
 }
 
 .departReturn {
     display: flex;
     flex-direction: row;
+    flex: 1 0 auto;
     column-gap: .25rem;
 }
 
@@ -362,6 +242,7 @@ input {
 #searchbutton {
     display: flex;
     align-items: center;
+    flex: 1 0 auto;
     background: #0062e3;
     border: none;
     border-radius: .75rem;
@@ -372,13 +253,10 @@ input {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: larger;
     text-decoration: none;
-
     height: 4.5rem;
     justify-content: center;
     margin-left: .75rem;
 }
-
-#searchbutton:hover {}
 
 .directflights {
     color: #fff;
