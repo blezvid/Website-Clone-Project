@@ -30,6 +30,7 @@
                     <div class="head2">
                         <h1>Millions of cheap flights. One simple search.</h1>
                     </div>
+
                     <div class="head3" id="navbuttons">
                         <button type="button" class="buttonone">
                             <a class="one" href="#">Flights</a>
@@ -42,42 +43,41 @@
                         </button>
                     </div>
 
-
                     <div class="head4">
-                        <div class="universalsearchbox">
-                            <div class="bigbox" id="bigbox1">
+                        <div class="searchControlsFlex">
+                            <div class="searchControlsBox" id="searchBox1">
                                 <div id="fromBox" class="searchbox">
                                     <label for="from" id="origin">From</label>
                                     <input class="box" type="text" name="from" id="from" value="London (Any)">
                                 </div>
 
-                                <div class="checkbox">
+                                <div class="checkBox">
                                     <input type="checkbox" name="fromCheckBox" id="fromCheckBox">
                                     <label for="fromCheckBox">Add nearby airports</label>
                                 </div>
                             </div>
 
-                            <div class="bigbox" id="bigbox2">
-                                <div class="searchbox">
+                            <div class="searchControlsBox" id="searchBox2">
+                                <div id="toBox" class="searchbox">
                                     <label for="to" id="destination">To</label>
                                     <input class="box" type="text" name="to" id="to" value="Country, city or airport">
                                 </div>
 
-                                <div class="checkbox">
+                                <div class="checkBox">
                                     <input type="checkbox" name="toCheckBox" id="toCheckBox">
                                     <label for="toCheckBox">Add nearby airports</label>
                                 </div>
                             </div>
 
-                            <div class="departReturn" id="bigbox3">
-                                <div class="bigbox">
+                            <div class="searchControlsBox" id="searchBox3">
+                                <div class="departReturnBox" id="departBox">
                                     <div class="searchbox">
                                         <label for="depart">Depart</label>
                                         <input class="box" type="text" name="depart" id="depart" value="Add date">
                                     </div>
                                 </div>
 
-                                <div class="bigbox" id="returnBox">
+                                <div class="departReturnBox" id="returnBox">
                                     <div class="searchbox">
                                         <label for="return">Return Date</label>
                                         <input class="box" type="text" name="return" id="return" value="Add date">
@@ -85,7 +85,7 @@
                                 </div>
                             </div>
 
-                            <div class="bigbox" id="bigbox4">
+                            <div class="searchControlsBox" id="searchBox4">
                                 <div id="travellersBox" class="searchbox">
                                     <label for="travellers">Travellers and Cabin Class</label>
                                     <input class="box" type="text" name="travellers" id="travellers"
@@ -93,281 +93,316 @@
                                 </div>
                             </div>
 
-                            <div class="bigbox" id="bigbox5">
-                                <button id="searchbutton" type="submit">Search</button>
-                            </div>
-
-                            <div class="directflights" id="bigbox6">
+                            <div class="directflights" id="searchBox6">
                                 <input type="checkbox" name="direct" id="direct">
                                 <label for="direct">Direct flights</label>
                             </div>
+
+                            <div class="searchControlsBox" id="searchBox5">
+                                <button id="searchbutton" type="submit">Search</button>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="midSection">
+                    <div id="moreOptions">
+                        <button type="button" class="tabs">
+                            <ion-icon name="globe-outline"></ion-icon>
+                            <a href="#">Explore Everywhere</a>
+                        </button>
+
+                        <button type="button" class="tabs">
+                            <ion-icon name="sparkles-outline"></ion-icon>
+                            <a href="#">Let us inspire your next trip</a>
+                        </button>
+
+                        <button type="button" class="tabs">
+                            <ion-icon name="bed-outline"></ion-icon>
+                            <a href="#">Hotels</a>
+                        </button>
+
+                        <button type="button" class="tabs">
+                            <ion-icon name="car-outline"></ion-icon>
+                            <a href="#">Car Hire</a>
+                        </button>
+                    </div>
+
+                    <div class="grid2">
+                        <div id="hotMonthPhoto">
+                            <div class="hotMonth">
+                                <div id="exploreNow">
+                                    <h2>Where's hot in April?</h2>
+                                    <p>Pack your bags and get ready to soak up plenty of Vitamin D. Our travel expert
+                                        shares
+                                        their top picks for the warmest places to visit this April.</p>
+                                    <button class="semi-transparent-button" type="button">Explore now</button>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid3">
+                        <h2>The most popular flights right now</h2>
+                        <p>Other travellers are loving these destinations. Search and compare flights, hotels, and car
+                            hire
+                            and join
+                            them on the adventure.</p>
+                    </div>
+                    <div>
+                        <div class="popular-flights">
+                            <div class="city-container">
+                                <img class="cityImage"
+                                    src="https://content.skyscnr.com/fa0912c6ed6f75f0607dfc080359a021/amsterdam.jpg?crop=100px:100px&quality=90"
+                                    alt="Amsterdam">
+                                <div class="cityMenu">
+                                    <div class="city">Amsterdam Schiphol</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-container">
+                                <img src="https://content.skyscnr.com/m/1a55403f63baf856/Large-London-England-Aug-2017-Brendan-van-Son-5.jpg?crop=100px:100px&quality=90"
+                                    alt="London" class="cityImage">
+                                <div class="cityMenu">
+                                    <div class="city">London</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-container">
+                                <img src="https://content.skyscnr.com/m/37e282443afc0ff7/original/Paris-2016-10.jpg?crop=100px:100px&quality=90"
+                                    alt="Paris" class="cityImage">
+                                <div class="cityMenu">
+                                    <div class="city">Paris</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-container">
+                                <img src="https://content.skyscnr.com/m/469a0aafa566e678/original/tourism-ireland-spotlight-dublin.png?crop=100px:100px&quality=90"
+                                    alt="Dublin" class="cityImage">
+
+                                <div class="cityMenu">
+                                    <div class="city">Dublin</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-container">
+                                <img src="https://content.skyscnr.com/7adba3a46af3ca29695f96937d19fcf1/GettyImages-149127892.jpg?crop=100px:100px&quality=90"
+                                    alt="Barcelona" class="cityImage">
+
+                                <div class="cityMenu">
+                                    <div class="city">Barcelona</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-container">
+                                <img src="https://content.skyscnr.com/588e330bc635d38f64eb8fe3f61d2e47/stock-photo-golden-hour-skyline-berlin-113819803.jpg?crop=100px:100px&quality=90"
+                                    alt="Berlin" class="cityImage">
+
+                                <div class="cityMenu">
+                                    <div class="city">Berlin Brandenburg</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-container">
+                                <img src="https://content.skyscnr.com/m/6d19e536df299d24/original/edinburgh-sailsbury.jpg?crop=100px:100px&quality=90"
+                                    alt="Edinburgh" class="cityImage">
+
+                                <div class="cityMenu">
+                                    <div class="city">Edinburgh</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-container">
+                                <img src="https://content.skyscnr.com/562fb1d3b394e92393671562fe241138/stock-photo-st-peter-s-basilica-83184691.jpg?crop=100px:100px&quality=90"
+                                    alt="Rome" class="cityImage">
+
+                                <div class="cityMenu">
+                                    <div class="city">Rome</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-container">
+                                <img src="https://content.skyscnr.com/c643eed202678c7de51c5ed5856998e4/GettyImages-497942480.jpg?crop=100px:100px&quality=90"
+                                    alt="Palma" class="cityImage">
+
+                                <div class="cityMenu">
+                                    <div class="city">Palma - Majorca</div>
+                                    <div class="FHCH">
+                                        <div>Flights</div>
+                                        <div>•</div>
+                                        <div>Hotels</div>
+                                        <div>•</div>
+                                        <div>Car hire</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faqs">
+                            <div>
+                                <h2>Booking flights with Skyscanner</h2>
+                            </div>
+                            <div class="questions">
+                                <div class="questionBlock" id="block1">
+                                    <div class="block1">
+                                        <p>How does Skyscanner work?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="block1">
+                                        <p>How can I find the cheapest flight using Skyscanner?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="block1">
+                                        <p>Where should I book a flight to right now?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+
+
+                                    <div class="block1">
+                                        <p>Do I book my flight with Skyscanner?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="block1">
+                                        <p>What happens after I have booked my flight?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+
+                                <div class="questionBlock" id="block2">
+                                    <div class="block2">
+                                        <p>Does Skyscanner do hotels too?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="block2">
+                                        <p>What about car hire?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="block2">
+                                        <p>What’s a Price Alert?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="block2">
+                                        <p>Can I book a flexible flight ticket?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="block2">
+                                        <p>Can I book flights that emit less CO₂?</p>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="others">
+                            <h3 class="others">
+                                <span>Our international sites</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        </h3>
                     </div>
                 </div>
             </div>
     </div>
-
-    <div class="mainBody">
-        <div class="middleBox">
-            <div id="moreoptions">
-                <button type="button" class="tabs">
-                    <ion-icon name="globe-outline"></ion-icon>
-                    <a href="#">Explore Everywhere</a>
-                </button>
-
-                <button type="button" class="tabs">
-                    <ion-icon name="sparkles-outline"></ion-icon>
-                    <a href="#">Let us inspire your next trip</a>
-                </button>
-
-                <button type="button" class="tabs">
-                    <ion-icon name="bed-outline"></ion-icon>
-                    <a href="#">Hotels</a>
-                </button>
-
-                <button type="button" class="tabs">
-                    <ion-icon name="car-outline"></ion-icon>
-                    <a href="#">Car Hire</a>
-                </button>
-            </div>
-
-            <div class="grid2">
-                <div id="hotMonthPhoto">
-                    <div class="hotMonth">
-                        <div id="exploreNow">
-                            <h2>Where's hot in April?</h2>
-                            <p>Pack your bags and get ready to soak up plenty of Vitamin D. Our travel expert shares
-                                their top picks for the warmest places to visit this April.</p>
-                            <button class="semi-transparent-button" type="button">Explore now</button>
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="grid3">
-                <h2>The most popular flights right now</h2>
-                <p>Other travellers are loving these destinations. Search and compare flights, hotels, and car
-                    hire
-                    and join
-                    them on the adventure.</p>
-            </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
             <div>
-                <div class="popular-flights">
-                    <div class="city-container">
-                        <img class="cityImage"
-                            src="https://content.skyscnr.com/fa0912c6ed6f75f0607dfc080359a021/amsterdam.jpg?crop=100px:100px&quality=90"
-                            alt="Amsterdam">
-                        <div class="cityMenu">
-                            <div class="city">Amsterdam Schiphol</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="city-container">
-                        <div>
-                            <img src="https://content.skyscnr.com/m/1a55403f63baf856/Large-London-England-Aug-2017-Brendan-van-Son-5.jpg?crop=100px:100px&quality=90"
-                                alt="London" class="cityImage">
-                        </div>
-                        <div class="cityMenu">
-                            <div class="city">London</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="city-container">
-                        <div>
-                            <img src="https://content.skyscnr.com/m/37e282443afc0ff7/original/Paris-2016-10.jpg?crop=100px:100px&quality=90"
-                                alt="Paris" class="cityImage">
-                        </div>
-                        <div class="cityMenu">
-                            <div class="city">Paris</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="city-container">
-                        <div>
-                            <img src="https://content.skyscnr.com/m/469a0aafa566e678/original/tourism-ireland-spotlight-dublin.png?crop=100px:100px&quality=90"
-                                alt="Dublin" class="cityImage">
-                        </div>
-                        <div class="cityMenu">
-                            <div class="city">Dublin</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="city-container">
-                        <div>
-                            <img src="https://content.skyscnr.com/7adba3a46af3ca29695f96937d19fcf1/GettyImages-149127892.jpg?crop=100px:100px&quality=90"
-                                alt="Barcelona" class="cityImage">
-                        </div>
-                        <div class="cityMenu">
-                            <div class="city">Barcelona</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="city-container">
-                        <div>
-                            <img src="https://content.skyscnr.com/588e330bc635d38f64eb8fe3f61d2e47/stock-photo-golden-hour-skyline-berlin-113819803.jpg?crop=100px:100px&quality=90"
-                                alt="Berlin" class="cityImage">
-                        </div>
-                        <div class="cityMenu">
-                            <div class="city">Berlin Brandenburg</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="city-container">
-                        <div>
-                            <img src="https://content.skyscnr.com/m/6d19e536df299d24/original/edinburgh-sailsbury.jpg?crop=100px:100px&quality=90"
-                                alt="Edinburgh" class="cityImage">
-                        </div>
-                        <div class="cityMenu">
-                            <div class="city">Edinburgh</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="city-container">
-                        <div>
-                            <img src="https://content.skyscnr.com/562fb1d3b394e92393671562fe241138/stock-photo-st-peter-s-basilica-83184691.jpg?crop=100px:100px&quality=90"
-                                alt="Rome" class="cityImage">
-                        </div>
-                        <div class="cityMenu">
-                            <div class="city">Rome</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="city-container">
-                        <div>
-                            <img src="https://content.skyscnr.com/c643eed202678c7de51c5ed5856998e4/GettyImages-497942480.jpg?crop=100px:100px&quality=90"
-                                alt="Palma" class="cityImage">
-                        </div>
-                        <div class="cityMenu">
-                            <div class="city">Palma - Majorca</div>
-                            <div class="FHCH">
-                                <div>Flights</div>
-                                <div>•</div>
-                                <div>Hotels</div>
-                                <div>•</div>
-                                <div>Car hire</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faqs">
-                    <div>
-                        <h2>Booking flights with Skyscanner</h2>
-                    </div>
-                    <div class="questions">
-                        <div class="questionBlock" id="block1">
-                            <div class="block1">How does Skyscanner work?</div>
-                            <div class="block1">How can I find the cheapest flight using Skyscanner?</div>
-                            <div class="block1">Where should I book a flight to right now?</div>
-                            <div class="block1">Do I book my flight with Skyscanner?</div>
-                            <div class="block1">What happens after I have booked my flight?</div>
-                        </div>
-                        <div class="questionBlock" id="block2">
-                            <div class="block2">Does Skyscanner do hotels too?</div>
-                            <div class="block2">What about car hire?</div>
-                            <div class="block2">What’s a Price Alert?</div>
-                            <div class="block2">Can I book a flexible flight ticket? </div>
-                            <div class="block2">Can I book flights that emit less CO₂?</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="others">
-                    <h3 class="others">Our international sites</h3>
-                </div>
+                <button type="button" class="footerButton">
+                    <img class="ukFlag" src="https://js.skyscnr.com/images/country/flag/header/uk.png" alt="UK Flag">
+                    <span>United Kingdom</span>
+                    <span>·</span>
+                    <span>English (UK)</span>
+                    <span>·</span>
+                    <span>£ GBP</span>
+                </button>
+            </div>
+            <div class="insideContainer">
+                <div class="footerBox">Help</div>
+                <div class="footerBox">Feedback</div>
+                <div class="footerBox">Privacy Settings</div>
+                <div class="footerBox">Log in</div>
+            </div>
+            <div class="insideContainer">
+                <div class="footerBox">Cookie policy</div>
+                <div class="footerBox">Privacy policy</div>
+                <div class="footerBox">Terms of service</div>
+                <div class="footerBox">Company Details</div>
+            </div>
+            <div class="insideContainer">
+                <div class="footerBox">Explore</div>
+                <div class="footerBox">Company</div>
+                <div class="footerBox">Partners</div>
+                <div class="footerBox">Trips</div>
+                <div class="footerBox">International Sites</div>
             </div>
         </div>
-        </main>
-        <footer>
-            <div class="footerContainer">
-                <div>
-                    <button type="button" class="footerButton">
-                        <img class="ukFlag" src="https://js.skyscnr.com/images/country/flag/header/uk.png"
-                            alt="UK Flag">
-                        <span>United Kingdom</span>
-                        <span>·</span>
-                        <span>English (UK)</span>
-                        <span>·</span>
-                        <span>£ GBP</span>
-                    </button>
-                </div>
-                <div class="insideContainer">
-                    <div class="footerBox">Help</div>
-                    <div class="footerBox">Feedback</div>
-                    <div class="footerBox">Privacy Settings</div>
-                    <div class="footerBox">Log in</div>
-                </div>
-                <div class="insideContainer">
-                    <div class="footerBox">Cookie policy</div>
-                    <div class="footerBox">Privacy policy</div>
-                    <div class="footerBox">Terms of service</div>
-                    <div class="footerBox">Company Details</div>
-                </div>
-                <div class="insideContainer">
-                    <div class="footerBox">Explore</div>
-                    <div class="footerBox">Company</div>
-                    <div class="footerBox">Partners</div>
-                    <div class="footerBox">Trips</div>
-                    <div class="footerBox">International Sites</div>
-                </div>
+        <div>
+            <div class="copyright">
+                <p>Compare and book cheap flights from anywhere to everywhere</p>
             </div>
-            <div>
-                <div class="copyright">
-                    <p>Compare and book cheap flights from anywhere to everywhere</p>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
     </div>
 
