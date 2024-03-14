@@ -1,2 +1,2 @@
-# Wesite-Clone-Project
+# Website-Clone-Project
  
